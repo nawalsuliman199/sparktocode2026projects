@@ -134,7 +134,64 @@ namespace task1
                 Console.WriteLine("Category: Senior");
                 Console.WriteLine("Ticket Price: 3 OMR");
             }
+            /////////////////////
+            ///task 8
+            Console.Write("Enter the total bill : ");
+            double bill = double.Parse(Console.ReadLine());
+            Console.Write("Are you a loyalty member ? (yes/no): ");
+            string answer = Console.ReadLine();
+            bool member = answer== "yes";
+            if (bill >20 && member)
+            { double discount = bill * 0.15;
+                double finalBill = bill - discount;
+                Console.WriteLine("Original Bill "+bill+" OMR");
+                Console.WriteLine("Discount "+discount+" OMR");
+                Console.WriteLine("Final Bill "+finalBill+" OMR");
 
+            }
+            else
+            {
+                Console.WriteLine("Original Bill " + bill + " OMR");
+                Console.WriteLine("Discount = 0 OMR");
+                Console.WriteLine("fianl  Bill " + bill + " OMR");
+            }
+            ////////////////////
+            ///task 9
+            Console.Write("Enter a number 1-7 : ");
+            int day = int.Parse(Console.ReadLine());
+            switch (day)
+            {
+                case 1:
+                    Console.WriteLine("Sunday");
+                    break;
+                case 2:
+                    Console.WriteLine("Monday");
+                    break;
+                case 3:
+                    Console.WriteLine("Tuesday");
+                    break;
+                case 4:
+                    Console.WriteLine("Wednesday");
+                    break;
+                case 5:
+                    Console.WriteLine("Thusrday");
+                    break;
+                case 6:
+                    Console.WriteLine("friday");
+                    break;
+                case7:
+                    Console.WriteLine("Sturday");
+                    break;
+                default:
+                    Console.WriteLine(" Invaild");
+                    break;
+            
+
+
+
+
+            }
+             
 
 
 
