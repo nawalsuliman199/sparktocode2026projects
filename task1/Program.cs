@@ -136,25 +136,25 @@ namespace task1
             }
             /////////////////////
             ///task 8
-            Console.Write("Enter the total bill : ");
-            double bill = double.Parse(Console.ReadLine());
-            Console.Write("Are you a loyalty member ? (yes/no): ");
-            string answer = Console.ReadLine();
-            bool member = answer== "yes";
-            if (bill >20 && member)
-            { double discount = bill * 0.15;
-                double finalBill = bill - discount;
-                Console.WriteLine("Original Bill "+bill+" OMR");
-                Console.WriteLine("Discount "+discount+" OMR");
-                Console.WriteLine("Final Bill "+finalBill+" OMR");
+            //Console.Write("Enter the total bill : ");
+            //double bill = double.Parse(Console.ReadLine());
+            //Console.Write("Are you a loyalty member ? (yes/no): ");
+            //string answer = Console.ReadLine();
+            //bool member = answer== "yes";
+            //if (bill >20 && member)
+            //{ double discount = bill * 0.15;
+            //    double finalBill = bill - discount;
+            //    Console.WriteLine("Original Bill "+bill+" OMR");
+            //    Console.WriteLine("Discount "+discount+" OMR");
+            //    Console.WriteLine("Final Bill "+finalBill+" OMR");
 
-            }
-            else
-            {
-                Console.WriteLine("Original Bill " + bill + " OMR");
-                Console.WriteLine("Discount = 0 OMR");
-                Console.WriteLine("fianl  Bill " + bill + " OMR");
-            }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Original Bill " + bill + " OMR");
+            //    Console.WriteLine("Discount = 0 OMR");
+            //    Console.WriteLine("fianl  Bill " + bill + " OMR");
+            //}
             ////////////////////
             ///task 9
             Console.Write("Enter a number 1-7 : ");
@@ -185,13 +185,91 @@ namespace task1
                 default:
                     Console.WriteLine(" Invaild");
                     break;
-            
-
-
 
 
             }
-             
+            ////task 13
+            Console.Write("Enter side 1: ");
+            double side1 = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter side 2: ");
+            double side2 = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter side 3: ");
+            double side3 = double.Parse(Console.ReadLine());
+
+            if (side1 + side2 > side3 &&
+                side1 + side3 > side2 &&
+                side2 + side3 > side1)
+            {
+                if (side1 == side2 && side2 == side3)
+                {
+                    Console.WriteLine("Equilateral");
+                }
+                else if (side1 == side2 || side1 == side3 || side2 == side3)
+                {
+                    Console.WriteLine("Isosceles");
+                }
+                else
+                {
+                    Console.WriteLine("Scalene");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid triangle");
+            }
+
+
+            ////task 14
+            Console.Write("Enter product code (1-3): ");
+            int code = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter quantity: ");
+            int quantity = int.Parse(Console.ReadLine());
+
+            Console.Write("Do you have a discount coupon? (yes/no): ");
+            string answer = Console.ReadLine();
+
+            bool coupon = answer == "yes";
+
+            double price = 0;
+
+            switch (code)
+            {
+                case 1:
+                    price = 8.500;
+                    break;
+
+                case 2:
+                    price = 12.000;
+                    break;
+
+                case 3:
+                    price = 5.000;
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid product code");
+                    return;
+            }
+
+            double subtotal = price * quantity;
+            double discount = 0;
+
+            if (coupon && subtotal > 20)
+            {
+                discount = subtotal * 0.10;
+            }
+
+            double afterDiscount = subtotal - discount;
+            double tax = afterDiscount * 0.05;
+            double total = afterDiscount + tax;
+
+            Console.WriteLine("Subtotal: " + subtotal + " OMR");
+            Console.WriteLine("Discount: " + discount + " OMR");
+            Console.WriteLine("Tax: " + tax + " OMR");
+            Console.WriteLine("Final Total: " + total + " OMR");
 
 
 
