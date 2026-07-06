@@ -41,8 +41,20 @@ namespace task_3
             Console.WriteLine("Trial end date: " + enddate.ToString("yyyy-MM-dd"));
             ////////////////////
             ////task 5
-            
+            Console.Write("enter your exam score  :");
+            double score = double.Parse(Console.ReadLine());
+            double roundscore = Math.Round(score);
+            Console.WriteLine("round score : " + roundscore);
+            if (roundscore >= 60)
+            {
+                Console.WriteLine("PASS");
+            }
+            else {
+                Console.WriteLine("FAIL");
 
+            }
+            ///////////////////////
+            /////TASK 6 
 
 
 
