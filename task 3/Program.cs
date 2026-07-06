@@ -1,4 +1,6 @@
-﻿namespace task_3
+﻿using System.Xml;
+
+namespace task_3
 {
     internal class Program
     {
@@ -20,6 +22,29 @@
             double res = Math.Pow(num,2);
             double ress = Math.Sqrt(num);
             Console.WriteLine("The square : " + res + " The  root square: " + ress);
+            ////////////////////////////
+            //////task 3
+            Console.Write("Enter your full name : ");
+            String name = Console.ReadLine();
+            String toupper = name.ToUpper();
+            String tolower = name.ToLower();
+            int length = name.Length;
+            Console.WriteLine("upper case " + toupper);
+            Console.WriteLine("lower case " + tolower);
+            Console.WriteLine("count " + length);
+            //////////////////////
+            ///task 4
+            Console.Write("enter the number of days of a free trial : ");
+            int days = int.Parse(Console.ReadLine());
+            DateTime today = DateTime.Today;
+            DateTime enddate = today.AddDays(days);
+            Console.WriteLine("Trial end date: " + enddate.ToString("yyyy-MM-dd"));
+            ////////////////////
+            ////task 5
+            
+
+
+
 
         }
     }
