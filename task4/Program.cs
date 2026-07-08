@@ -19,6 +19,17 @@
         {
             return (celsius * 9 / 5) + 32;
         }
+        /// task 4
+        static void DisplayMenu()
+        {
+            Console.WriteLine(" Menu ");
+            Console.WriteLine(" 1.Start ");
+            Console.WriteLine(" 2.Help ");
+            Console.WriteLine(" 3.Exit ");
+
+        }
+
+
         static void Main(string[] args)
         {
             Console.Write("Enter your name : ");
@@ -35,8 +46,9 @@
             double celsius = double.Parse(Console.ReadLine());
             double fahrenheit = CelsiusToFahrenheit(celsius);
             Console.WriteLine("Temerature in fahrenheit = " + fahrenheit);
-
-            
+            //task 4
+            DisplayMenu();
+            Console.ReadLine();
         }
     }
 }
