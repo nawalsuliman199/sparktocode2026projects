@@ -28,7 +28,11 @@
             Console.WriteLine(" 3.Exit ");
 
         }
-
+        //task 5
+        static bool IsEven(int num)
+        {
+            return numb % 2 == 0;
+        }
 
         static void Main(string[] args)
         {
@@ -49,6 +53,22 @@
             //task 4
             DisplayMenu();
             Console.ReadLine();
+            //task 5
+            Console.Write("Enter a number: ");
+            int num = int.Parse(Console.ReadLine());
+
+            if (IsEven(num))
+            {
+                Console.WriteLine("Even");
+            }
+            else
+            {
+                Console.WriteLine("Odd");
+            }
+
+            Console.ReadLine();
+            //task 6 
+
         }
     }
 }
