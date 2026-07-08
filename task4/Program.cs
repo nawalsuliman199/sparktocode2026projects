@@ -33,7 +33,17 @@
         {
             return numb % 2 == 0;
         }
+        //task 6
+        static double CalculateArea(double length, double width)
+        {
+            return length * width;
+        }
 
+      
+        static double CalculatePerimeter(double length, double width)
+        {
+            return 2 * (length + width);
+        }
         static void Main(string[] args)
         {
             Console.Write("Enter your name : ");
@@ -68,6 +78,19 @@
 
             Console.ReadLine();
             //task 6 
+            Console.Write("Enter the length: ");
+            double length = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter the width: ");
+            double width = double.Parse(Console.ReadLine());
+
+            double area = CalculateArea(length, width);
+            double perimeter = CalculatePerimeter(length, width);
+
+            Console.WriteLine("Area = " + area);
+            Console.WriteLine("Perimeter = " + perimeter);
+
+            Console.ReadLine();
 
         }
     }
