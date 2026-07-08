@@ -14,7 +14,11 @@
         {
             return number * number;
         }
-
+        /// task 3
+        static double CelsiusToFahrenheit( double celsius)
+        {
+            return (celsius * 9 / 5) + 32;
+        }
         static void Main(string[] args)
         {
             Console.Write("Enter your name : ");
@@ -26,6 +30,12 @@
                 ReadLine());
             int res = square(number);
             Console.WriteLine("square = " + res);
+            //task 3
+            Console.Write("Enter temerature in celsius :");
+            double celsius = double.Parse(Console.ReadLine());
+            double fahrenheit = CelsiusToFahrenheit(celsius);
+            Console.WriteLine("Temerature in fahrenheit = " + fahrenheit);
+
             
         }
     }
