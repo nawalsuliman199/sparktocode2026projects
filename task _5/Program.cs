@@ -29,6 +29,15 @@
                 Console.WriteLine(task);
             }
             //task 3
+            Stack<string> history= new Stack<string>();
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write("Enter website"+(i+1));
+                history.Push(Console.ReadLine());
+            }
+            history.Pop();
+            Console.WriteLine("current page :" + history.Peek());
+            //task 4
 
 
 
