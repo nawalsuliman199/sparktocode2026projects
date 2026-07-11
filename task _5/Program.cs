@@ -68,7 +68,53 @@
             Console.WriteLine("Highest Grade: " + grades[grades.Length - 1]);
             Console.WriteLine("Average Grade: " + average);
 
+            //task 6
+            List<string> shopping = new List<string>();
 
+            while (true)
+            {
+                Console.Write("Enter item: ");
+                string item = Console.ReadLine();
+
+                if (item == "done")
+                {
+                    break;
+                }
+
+                shopping.Add(item);
+            }
+
+            Console.WriteLine("Shopping List:");
+            foreach (string item in shopping)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.Write("Enter item to remove: ");
+            string remove = Console.ReadLine();
+
+            shopping.Remove(remove);
+
+            Console.WriteLine("After Remove:");
+            foreach (string item in shopping)
+            {
+                Console.WriteLine(item);
+            }
+            //task 7
+            List<int> scores = new List<int>();
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write("Enter score: ");
+                scores.Add(int.Parse(Console.ReadLine()));
+            }
+
+            scores.Sort();
+            scores.Reverse();
+
+            Console.WriteLine("1st Place: " + scores[0]);
+            Console.WriteLine("2nd Place: " + scores[1]);
+            Console.WriteLine("3rd Place: " + scores[2]);
 
 
 
