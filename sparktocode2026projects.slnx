@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="BankingSystemApp/BankingSystemApp.csproj" Id="e7fea624-8366-4c66-a022-2a3a194270ea" />
   <Project Path="task 2/task 2.csproj" Id="f7cfd410-acd4-450b-ac54-2b75a9edb55d" />
   <Project Path="task 3/task 3.csproj" Id="1b21be01-0a1a-4f0b-8e0d-e33761d82360" />
   <Project Path="task _5/task _5.csproj" Id="61ed388c-8b91-480d-9cbe-780d54b603d8" />
