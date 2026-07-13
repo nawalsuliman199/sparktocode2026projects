@@ -78,8 +78,33 @@
         }
         static void AddAccount()
         {
+            Console.Write("Enter  customer name : ");
+            string name = Console.ReadLine();
+            Console.Write("Enter account number :");
+            string account = Console.ReadLine();
+            if (accountNumbers.Contains(account))
+            {
+                Console.WriteLine("Account number already exists .");
+                return;
 
-        }
+            }
+            Console.Write("Enter starting balance :");
+            double balance = double.Parse(Console.ReadLine());
+            if (balance < 0)
+            {
+                Console.WriteLine("Balance connot be negative.");
+                return;
+
+            }
+            customerNameS.Add(name);
+            accountNumbers.Add(account);
+            balances.Add(balance);
+
+            Console.WriteLine("Account addes successfully .");
+            Console.WriteLine("Customer :" + name);
+            Console.WriteLine("Account Number " + account);
+            Console.WriteLine("Balance " + balance);
+        }   
 
         static void DepositMoney()
         {
