@@ -239,7 +239,20 @@
 
         static void ListAllAccounts()
         {
+            if (accountNumbers.Count == 0)
+            {
+                Console.WriteLine("No accounts available.");
+                return;
+            }
 
+            Console.WriteLine(" All Accounts ");
+
+            for (int i = 0; i < accountNumbers.Count; i++)
+            {
+                Console.WriteLine("Customer : " + customerNameS[i]);
+                Console.WriteLine("Account  : " + accountNumbers[i]);
+                Console.WriteLine("Balance  : " + balances[i]);
+            }
         }
 
         static void CloseAccount()
