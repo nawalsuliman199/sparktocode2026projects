@@ -133,6 +133,36 @@
 
         static void WithdrawMoney()
         {
+            Console.Write("Enter account number: ");
+            string account = Console.ReadLine();
+
+            int index = accountNumbers.IndexOf(account);
+
+            if (index == -1)
+            {
+                Console.WriteLine("Account not found.");
+                return;
+            }
+
+            Console.Write("Enter withdraw amount: ");
+            double amount = double.Parse(Console.ReadLine());
+
+            if (amount <= 0)
+            {
+                Console.WriteLine("Amount must be greater than zero.");
+                return;
+            }
+
+            if (amount > balances[index])
+            {
+                Console.WriteLine("Insufficient balance.");
+                return;
+            }
+
+            balances[index] = balances[index] - amount;
+
+            Console.WriteLine("Withdraw successful.");
+            Console.WriteLine("New Balance: " + balances[index]);
 
         }
 
