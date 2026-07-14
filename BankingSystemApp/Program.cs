@@ -108,6 +108,26 @@
 
         static void DepositMoney()
         {
+            Console.Write("Enter account number :");
+            string account = Console.ReadLine();
+            int index = accountNumbers.IndexOf(account);
+            if (index==-1)
+            {
+                Console.WriteLine("Account not found ");
+                return;
+            }
+            Console.Write("Enter deposit amount :");
+            double amount = double.Parse(Console.ReadLine());
+            if (amount <= 0)
+            {
+                Console.WriteLine("Amount must be greater than zero");
+                return;
+            }
+            balances[index] = balances[index] + amount;
+
+            Console.WriteLine("Deposit successful.");
+            Console.WriteLine("New Balance: " + balances[index]);
+
 
         }
 
