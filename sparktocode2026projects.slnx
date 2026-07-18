@@ -4,5 +4,6 @@
   <Project Path="task 3/task 3.csproj" Id="1b21be01-0a1a-4f0b-8e0d-e33761d82360" />
   <Project Path="task _5/task _5.csproj" Id="61ed388c-8b91-480d-9cbe-780d54b603d8" />
   <Project Path="task1/task1.csproj" />
+  <Project Path="task1oop/task1oop.csproj" Id="2e6f8bc5-7076-4ae4-97d9-e536826b58b1" />
   <Project Path="task4/task4.csproj" Id="7144a38d-dd6c-4610-b58d-b8d946dc059b" />
 </Solution>
