@@ -1,4 +1,9 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="../Airport_Cade.pdf" />
+    <File Path="../Collage.pdf" />
+    <File Path="../Untitled Diagram.drawio.png" />
+  </Folder>
   <Project Path="BankingSystemApp/BankingSystemApp.csproj" Id="e7fea624-8366-4c66-a022-2a3a194270ea" />
   <Project Path="HotelManagementSystem/HotelManagementSystem.csproj" Id="16606232-2978-49b0-8713-d0e3f80bc320" />
   <Project Path="task 2/task 2.csproj" Id="f7cfd410-acd4-450b-ac54-2b75a9edb55d" />
