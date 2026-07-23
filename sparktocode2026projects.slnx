@@ -1,7 +1,7 @@
 <Solution>
   <Folder Name="/Solution Items/">
-    <File Path="../database/Airport_Cade.pdf" />
-    <File Path="../database/Collage.pdf" />
+    <File Path="../database/Airport_Cade_page-0001.jpg" />
+    <File Path="../database/Collage_page-0001.jpg" />
     <File Path="../database/Untitled Diagram.drawio.png" />
   </Folder>
   <Project Path="BankingSystemApp/BankingSystemApp.csproj" Id="e7fea624-8366-4c66-a022-2a3a194270ea" />
