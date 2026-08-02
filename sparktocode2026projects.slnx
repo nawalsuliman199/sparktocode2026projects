@@ -1,44 +1,55 @@
 <Solution>
-  <Configurations>
-    <BuildType Name="Debug" />
-    <BuildType Name="Default" />
-    <BuildType Name="Release" />
-  </Configurations>
-  <Project Path="BankingSystemApp/BankingSystemApp.csproj" Id="e7fea624-8366-4c66-a022-2a3a194270ea">
-    <BuildType Solution="Default|*" Project="Release" />
-    <Build Solution="Default|*" Project="false" />
-  </Project>
-  <Project Path="HotelManagementSystem/HotelManagementSystem.csproj" Id="16606232-2978-49b0-8713-d0e3f80bc320">
-    <BuildType Solution="Default|*" Project="Release" />
-    <Build Solution="Default|*" Project="false" />
-  </Project>
-  <Project Path="task 2/task 2.csproj" Id="f7cfd410-acd4-450b-ac54-2b75a9edb55d">
-    <BuildType Solution="Default|*" Project="Release" />
-    <Build Solution="Default|*" Project="false" />
-  </Project>
-  <Project Path="task 3/task 3.csproj" Id="1b21be01-0a1a-4f0b-8e0d-e33761d82360">
-    <BuildType Solution="Default|*" Project="Release" />
-    <Build Solution="Default|*" Project="false" />
-  </Project>
-  <Project Path="task _5/task _5.csproj" Id="61ed388c-8b91-480d-9cbe-780d54b603d8">
-    <BuildType Solution="Default|*" Project="Release" />
-    <Build Solution="Default|*" Project="false" />
-  </Project>
-  <Project Path="task1/task1.csproj">
-    <BuildType Solution="Default|*" Project="Release" />
-    <Build Solution="Default|*" Project="false" />
-  </Project>
-  <Project Path="task1oop/task1oop.csproj" Id="2e6f8bc5-7076-4ae4-97d9-e536826b58b1">
-    <BuildType Solution="Default|*" Project="Release" />
-    <Build Solution="Default|*" Project="false" />
-  </Project>
-  <Project Path="Task3SQL/Task3SQL.ssmssqlproj" Type="4f2e2c19-372f-40d8-9fa7-9d2138c6997a">
-    <BuildType Project="Default" />
-    <Platform Project="?" />
-    <Build Project="false" />
-  </Project>
-  <Project Path="task4/task4.csproj" Id="7144a38d-dd6c-4610-b58d-b8d946dc059b">
-    <BuildType Solution="Default|*" Project="Release" />
-    <Build Solution="Default|*" Project="false" />
-  </Project>
+<Configurations>
+  <BuildType Name="Debug" />
+  <BuildType Name="Default" />
+  <BuildType Name="Release" />
+</Configurations>
+
+<Project Path="BankingSystemApp/BankingSystemApp.csproj" Id="e7fea624-8366-4c66-a022-2a3a194270ea">
+  <BuildType Solution="Default|*" Project="Release" />
+  <Build Solution="Default|*" Project="false" />
+</Project>
+
+<Project Path="ECommerceApp/ECommerceApp.csproj" Id="9b40ec18-5b7a-416c-81f3-de5b54bbe105" />
+
+<Project Path="HotelManagementSystem/HotelManagementSystem.csproj" Id="16606232-2978-49b0-8713-d0e3f80bc320">
+  <BuildType Solution="Default|*" Project="Release" />
+  <Build Solution="Default|*" Project="false" />
+</Project>
+
+<Project Path="task 2/task 2.csproj" Id="f7cfd410-acd4-450b-ac54-2b75a9edb55d">
+  <BuildType Solution="Default|*" Project="Release" />
+  <Build Solution="Default|*" Project="false" />
+</Project>
+
+<Project Path="task 3/task 3.csproj" Id="1b21be01-0a1a-4f0b-8e0d-e33761d82360">
+  <BuildType Solution="Default|*" Project="Release" />
+  <Build Solution="Default|*" Project="false" />
+</Project>
+
+<Project Path="task _5/task _5.csproj" Id="61ed388c-8b91-480d-9cbe-780d54b603d8">
+  <BuildType Solution="Default|*" Project="Release" />
+  <Build Solution="Default|*" Project="false" />
+</Project>
+
+<Project Path="task1/task1.csproj">
+  <BuildType Solution="Default|*" Project="Release" />
+  <Build Solution="Default|*" Project="false" />
+</Project>
+
+<Project Path="task1oop/task1oop.csproj" Id="2e6f8bc5-7076-4ae4-97d9-e536826b58b1">
+  <BuildType Solution="Default|*" Project="Release" />
+  <Build Solution="Default|*" Project="false" />
+</Project>
+
+<Project Path="Task3SQL/Task3SQL.ssmssqlproj" Type="4f2e2c19-372f-40d8-9fa7-9d2138c6997a">
+  <BuildType Project="Default" />
+  <Platform Project="?" />
+  <Build Project="false" />
+</Project>
+
+<Project Path="task4/task4.csproj" Id="7144a38d-dd6c-4610-b58d-b8d946dc059b">
+  <BuildType Solution="Default|*" Project="Release" />
+  <Build Solution="Default|*" Project="false" />
+</Project>
 </Solution>

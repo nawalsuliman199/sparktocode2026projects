@@ -31,7 +31,7 @@
         //task 5
         static bool IsEven(int num)
         {
-            return numb % 2 == 0;
+            return num % 2 == 0;
         }
         //task 6
         static double CalculateArea(double length, double width)
